@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Лаба 5 </title>
+  <link rel="icon" href="img/favicon.png">
+ </head>
+ <body>
+	<div class="container">
+	<div class="navigation-menu">
+	<ul>
+		<li><a class="active" href="index.html">Новелла</a></li>
+	</ul>
+	</div>
+	<div class="main">	
+		<h2>Начало: </h2>
+		<p id="output">Вы оказались в мрачной тюрьме «Северная стена». За решетками вам предстоит провести долгие годы, если не сумеете сбежать. 
+		Но у вас есть план! Каждое ваше действие приведет к различным последствиям. Вы готовы? Начнем!</p>
+		<img id="output-image" src="img/0.jpg">
+		<script src="js/novela.js"></script>
+		<div>
+			<button id="start" onclick="StartNovella()">Начать</button>
+		</div>
+		<div id="buttons">
+			<button id="first-button" onclick="First_Button()" style="display: none;"></button>
+			<button id="second-button" onclick="Second_Button()" style="display: none;"></button>
+			<button id="third-button" onclick="Third_Button()" style="display: none;"></button>
+		</div>
+	</div>
+	<footer class="footer">
+		<p>Воронков Вадим ПИЭ-32</p>
+	</footer>
+	</div>
+ </body>
+</html>

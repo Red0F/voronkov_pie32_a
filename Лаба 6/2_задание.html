@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Лаба 6 </title>
+  <link rel="icon" href="img/favicon.png">
+ </head>
+ <body>
+	<div class="container">
+	<div class="navigation-menu">
+	<ul>
+		<li><a href="index.html">Задание_1</a></li>
+		<li><a class="active" href="2_задание.html">Задание_2</a></li>
+	</ul>
+	</div>
+	<div class="main">	
+		<h2>Задание: Дана матрица размера M × N (M — четное число). Поменять местами верхнюю и нижнюю половины матрицы.</h2>
+		<p>Введите кол-во строк матрицы (чётное число):</p>
+		<input type="text" id="calc_1">
+		<p>Введите кол-во столбцов матрицы:</p>
+		<input type="text" id="calc_2">
+		<div style="margin-top: 20px;">
+			<button onClick="NewMassiv();"> Создание новой матрицы </button>
+			<button onClick="ChangeMassiv();"> Изменения матрицы по заданию </button>
+			<button onClick="GetMassiv();"> Вывести текущую матрицу </button>
+		</div>
+		<p id="resultCalc"> Данные не введены</p>
+		<script src="js/2_задание.js"></script>
+	</div>
+	<footer class="footer">
+		<p>Воронков Вадим ПИЭ-32</p>
+	</footer>
+	</div>
+ </body>
+</html>

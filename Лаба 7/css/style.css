@@ -1,0 +1,102 @@
+
+body {
+	font-family: Raleway,Italic,sans-serif;
+	margin: 0;
+	background-color:#1282A2;
+}
+
+
+.container {
+	display: grid;
+	grid-template-columns: [column1] 100% [column2];
+	grid-template-rows: [row-start row1] 32px [row2] auto [row3] auto [row4] 60px [row-end row5];
+	gap: 20px;
+	grid-template-areas: 
+	"header"
+	"main"
+	"cards"
+	"footer";
+}
+
+.navigation-menu {
+	
+	grid-area: header;
+	ul {
+		grid-area: header;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 7px 8px;
+		text-decoration: none;
+	}
+
+	.active {
+		background-color: #EF3054;
+	}
+}
+
+.main {
+	grid-area: main;
+    border-radius: 8px;
+    padding: 1vh;
+    text-align: center;
+    background-color: #0f6c88;
+    gap: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f6c88;;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin: 5px 0;
+    color: white;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #111;
+	color: white;	
+}
+

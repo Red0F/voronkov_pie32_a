@@ -14,4 +14,3 @@ if (isNaN(a) || isNaN(b)) {
     }
 document.getElementById("resultCalc").innerHTML=c;
 }
-
